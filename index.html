@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Masarat Booths</title>
+	<link href="favicon.ico" rel="icon" type="image/x-icon" />
+	<link href="booth.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+	 
+<div class="containerV">
+  <div class="video-section">
+		<div class="video">
+          <video class="video" preload="auto" muted="muted" autoplay="autoplay" loop="loop">
+            <source src="Videos/into.mp4" type="video/mp4" >
+            Your browser does not support the video tag. </video>
+      </div>
+	</div>
+</div>
+		<div class="row1">
+	  <div class="column1 middle">
+		<h2>Previouse Booths</h2>
+		  <div class="description">
+        	<p>Description goes here...</p>
+    	  </div>
+		<p>Some text..</p>
+	  </div>
+	  <div class="column1 right">
+		<div class="row">
+		  <div class="column">
+<!--			<h2>Column 1</h2>-->
+			  <div class="social-media">
+			  <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+			  </div>
+			<p>Some text..</p>
+		  </div>
+		  <div class="column">
+<!--			<h2>Column 2</h2>-->
+			  <div class="social-media">
+			  <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+			  </div>
+			<p>Some text..</p>
+		  </div>
+		</div>
+
+		<div class="row">
+		  <div class="column">
+<!--			<h2>Column 3</h2>-->
+			  <div class="social-media">
+			  <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+			  </div>
+			<p>Some text..</p>
+		  </div>
+		  <div class="column">
+<!--			<h2>Column 4</h2>-->
+			  <div class="social-media">
+			  <a herf="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+			  </div>
+			<p>Some text..</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+<!--
+    <div class="header">
+        <h1>Length Converter</h1>
+    </div>
+    <p class="description">Type a value in any of the fields to convert between Length measurements:</p>
+    
+    <div class="form-group">
+        <label for="feet">Feet</label>
+        <input type="number" id="feet" oninput="convertFromFeet()" placeholder="Enter value">
+    </div>
+    
+    <div class="form-group">
+        <label for="meters">Meters</label>
+        <input type="number" id="meters" oninput="convertFromMeters()" placeholder="Enter value">
+    </div>
+
+    <div class="form-group">
+        <label for="inches">Inches</label>
+        <input type="number" id="inches" oninput="convertFromInches()" placeholder="Enter value">
+    </div>
+
+    <div class="form-group">
+        <label for="cm">cm</label>
+        <input type="number" id="cm" oninput="convertFromCm()" placeholder="Enter value">
+    </div>
+
+    <div class="form-group">
+        <label for="yards">Yards</label>
+        <input type="number" id="yards" oninput="convertFromYards()" placeholder="Enter value">
+    </div>
+	
+<script>
+    function convertFromFeet() {
+        let feet = parseFloat(document.getElementById("feet").value);
+        document.getElementById("meters").value = (feet * 0.3048).toFixed(5);
+        document.getElementById("inches").value = (feet * 12).toFixed(5);
+        document.getElementById("cm").value = (feet * 30.48).toFixed(5);
+        document.getElementById("yards").value = (feet * 0.33333).toFixed(5);
+        document.getElementById("kilometers").value = (feet * 0.0003048).toFixed(5);
+        document.getElementById("miles").value = (feet * 0.000189394).toFixed(5);
+    }
+
+    function convertFromMeters() {
+        let meters = parseFloat(document.getElementById("meters").value);
+        document.getElementById("feet").value = (meters / 0.3048).toFixed(5);
+        document.getElementById("inches").value = (meters * 39.3701).toFixed(5);
+        document.getElementById("cm").value = (meters * 100).toFixed(5);
+        document.getElementById("yards").value = (meters * 1.09361).toFixed(5);
+        document.getElementById("kilometers").value = (meters / 1000).toFixed(5);
+        document.getElementById("miles").value = (meters * 0.000621371).toFixed(5);
+    }
+
+    function convertFromInches() {
+        let inches = parseFloat(document.getElementById("inches").value);
+        document.getElementById("feet").value = (inches / 12).toFixed(5);
+        document.getElementById("meters").value = (inches * 0.0254).toFixed(5);
+        document.getElementById("cm").value = (inches * 2.54).toFixed(5);
+        document.getElementById("yards").value = (inches * 0.0277778).toFixed(5);
+        document.getElementById("kilometers").value = (inches * 0.0000254).toFixed(5);
+        document.getElementById("miles").value = (inches * 0.000015783).toFixed(5);
+    }
+
+    function convertFromCm() {
+        let cm = parseFloat(document.getElementById("cm").value);
+        document.getElementById("feet").value = (cm * 0.0328084).toFixed(5);
+        document.getElementById("meters").value = (cm / 100).toFixed(5);
+        document.getElementById("inches").value = (cm * 0.393701).toFixed(5);
+        document.getElementById("yards").value = (cm * 0.0109361).toFixed(5);
+        document.getElementById("kilometers").value = (cm / 100000).toFixed(5);
+        document.getElementById("miles").value = (cm * 0.0000062137).toFixed(5);
+    }
+
+    function convertFromYards() {
+        let yards = parseFloat(document.getElementById("yards").value);
+        document.getElementById("feet").value = (yards * 3).toFixed(5);
+        document.getElementById("meters").value = (yards * 0.9144).toFixed(5);
+        document.getElementById("inches").value = (yards * 36).toFixed(5);
+        document.getElementById("cm").value = (yards * 91.44).toFixed(5);
+        document.getElementById("kilometers").value = (yards * 0.0009144).toFixed(5);
+        document.getElementById("miles").value = (yards * 0.000568182).toFixed(5);
+    }
+</script>
+-->
+	
+</body>
+<footer>
+	
+	
+	
+</footer>
+</html>
