@@ -1,110 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Masarat Booths</title>
-        <link href="favicon.ico" rel="icon" type="image/x-icon">
-        <link href="Event.css" rel="stylesheet" type="text/css">
-        <script src="Events.js" defer></script>
-    <!--scripts first-->
-              
-    </head>
 
-<!-- design inspired by https://www.authkit.com/ -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masarat Events</title>
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link href="Event.css" rel="stylesheet" type="text/css">
+    <!-- External scripts deferred for better performance -->
+    <link href="Ticket.css" rel="stylesheet" type="text/css">
+    <script src="Events.js" defer></script>
+</head>
+
+<body>
+    <!-- Design inspired by https://www.authkit.com/ -->
 <div class="header">
-  <h2><a href="https://codepen.io/RAFA3L" target="_blank" rel="noopener noreferrer">Masarat</a></h2>
-  <div class="mid-spot" onclick="document.body.classList.toggle('gold');"></div>
-  <button class="contact-btn">
-    <span class="glow"></span>
-    <span class="contact-btn-content">Contact Us</span>
-  </button>
+        <h2><a href="https://codepen.io/RAFA3L" target="_blank" rel="noopener noreferrer">Masarat</a></h2>
+        <div class="mid-spot" onclick="document.body.classList.toggle('gold');"></div>
+        <button class="contact-btn">
+            <span class="glow"></span>
+            <span class="contact-btn-content">Contact Us</span>
+        </button>
 
-  <div class="spotlight">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-</div>
+        <div class="spotlight">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 
 <canvas id="particleCanvas"></canvas>
 
-<div class="accent-lines">
-  <div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-</div>
-<div class="heroSubP">
-  <p>Masarat Decor</p>
-</div>
+    <div class="accent-lines">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="heroSubP">
+      <p>Masarat Decor</p>
+        <img src="Images/Logos/logo 150px.svg" width="870" height="30">
+    </div>
+
 <div class="hero">
-  <div class="heroT">
-    <h2>Event</h2>
-    <h2>Event</h2>
-  </div>
+        <div class="heroT">
+            <h2>Event</h2>
+            <h2>Event</h2>
+        </div>
 </div>
-<p class="heroP">The world's Best Designers &amp; Architecture, <br>
-  powered by Masarat Decor.</p>
-<div class="mountains">
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
-<div class="hero-spacer">
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
-    <script src="Ticket.js" type="text/babel"></script>
-    <main id="app">
-    <section class="ticket">
+
+    <p class="heroP">The world's Best Designers &amp; Architecture,<br>
+        powered by Masarat Decor.
+    </p>
+
+    <div class="mountains">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="hero-spacer"></div>
+
+<div class="content-section">
+        <div class="content-acc">
+            <div></div>
+            <div></div>
+        </div>
+        <br>
+  <p class="subt">Revolutionary by design</p>
+        <h3 class="title">Engage. Connect.<br> Endless opportunities.</h3>
+        <p class="subp">Our booths are crafted to draw people in,<br>offering adaptable spaces that enhance your
+            marketing strategy and leave a lasting impression.
+        </p>
+    </div>
+
+    <!-- Main content for the ticket -->
+    <!--<main id="app">
+        <section class="ticket">
             <header class="front">
                 <div class="holo"></div>
-                <img class="logo" src="Images/Logos/Logo.png">
+              <img class="logo" src="Images/Logos/Logo.png">
                 <aside class="divider"></aside>
             </header>
+
             <section class="back">
                 <div class="holo"></div>
                 <img class="logo" src="Images/Logos/Masaratlogo.png">
                 <div class="data">
-                    <h3>Date</h3>
-                    <p contenteditable spellcheck=false>Thu Oct 13</p>
+                  <h3>Date</h3>
+                  <p>Thu Oct 13</p>
                     <h3>Time</h3>
-                    <p contenteditable spellcheck=false>05:05 pm</p>
+                    <p>05:05 pm</p>
                     <h3>Username</h3>
-                    <p contenteditable spellcheck=false>&#64;MasaratDecor.sa</p>
+                    <p>&#64;MasaratDecor.sa</p>
                     <a class="qr" href="https://linktr.ee/masarat_decor" target="_blank">
                         <img src="Images/Logos/QR.svg" alt="A code to use for accessing the masaratdecor linktree profile">
                     </a>
                 </div>
+
                 <aside class="divider">
                     <div class="username">
                         <img class="profile" src="Images/Logos/Masaratlogo.png">
-                        <span contenteditable spellcheck=false>Masarat Decor</span> <!--<img class="verified" src="https://assets.codepen.io/13471/verified.png">-->
+                        <span>Masarat Decor</span>
                     </div>
-                    <span class="usernum" contenteditable spellcheck=false>180249081</span>
+                    <span class="usernum">180249081</span>
                 </aside>
             </section>
         </section>
-    </main>
-    </div>
-<div class="content-section">
-  <div class="content-acc">
-    <div></div>
-    <div></div>
-  </div>
-  <p class="subt">Revolutionary by design</p>
-  <h3 class="title">Engage. Connect.<br>
-    Endless opportunities.</h3>
-  <p class="subp">Our booths are crafted to draw people in, <br>offering adaptable spaces that enhance your marketing strategy and leave a lasting impression.</p>
-</div>
-    
+    </main>-->
+
+    <!-- Scripts loaded at the bottom for better performance -->
+    <!--<footer>
+        <div>
+              <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+              <script src="Ticket.js" type="text/babel"></script>
+        </div>
+    </footer>
+-->
+</body>
+
 </html>
